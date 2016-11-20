@@ -77,6 +77,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\constants.h" />
+    <ClInclude Include="src\game.h" />
+    <ClInclude Include="src\gameError.h" />
+    <ClInclude Include="src\graphics.h" />
+    <ClInclude Include="src\image.h" />
+    <ClInclude Include="src\input.h" />
+    <ClInclude Include="src\samplegame.h" />
+    <ClInclude Include="src\textureManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\game.cpp" />
+    <ClCompile Include="src\graphics.cpp" />
+    <ClCompile Include="src\image.cpp" />
+    <ClCompile Include="src\input.cpp" />
+    <ClCompile Include="src\samplegame.cpp" />
+    <ClCompile Include="src\textureManager.cpp" />
+    <ClCompile Include="src\winmain.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
