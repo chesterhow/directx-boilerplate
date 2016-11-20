@@ -36,6 +36,10 @@ void SampleGame::initialize(HWND hwnd) {
 	if (!ship.initialize(graphics, SHIP_WIDTH, SHIP_HEIGHT, SHIP_COLS, &shipTexture))
 		throw(GameError(gameErrorNS::FATAL_ERROR, "Error initializing ship"));
 
+	background.setScale(BACKGROUND_SCALE);
+
+	ship.setX(GAME_WIDTH / 2);
+	ship.setY(GAME_HEIGHT / 2);
 	ship.setFrames(SHIP_START_FRAME, SHIP_END_FRAME);	// animation frames
 	ship.setCurrentFrame(SHIP_START_FRAME);				// starting frame
 	ship.setFrameDelay(SHIP_ANIMATION_DELAY);

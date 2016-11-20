@@ -27,8 +27,8 @@
 const char CLASS_NAME[] = "Boilerplate";
 const char GAME_TITLE[] = "Boilerplate";
 const bool FULLSCREEN = false;
-const UINT GAME_WIDTH = 640;
-const UINT GAME_HEIGHT = 480;
+const UINT GAME_WIDTH = 960;
+const UINT GAME_HEIGHT = 600;
 
 // Game
 const double PI = 3.14159265;
@@ -47,9 +47,10 @@ const UCHAR UP_KEY = VK_UP;
 const UCHAR DOWN_KEY = VK_DOWN;
 
 // Sprites
-const char BACKGROUND_IMAGE[] = "sprites\\orion.jpg";
+const char BACKGROUND_IMAGE[] = "sprites\\background.png";
 const char SHIP_IMAGE[] = "sprites\\ship.png";
 
+const float BACKGROUND_SCALE = 0.5f;
 const int SHIP_START_FRAME = 0;					// starting frame of ship animation
 const int SHIP_END_FRAME = 3;					// last frame of ship animation
 const float SHIP_ANIMATION_DELAY = 0.2f;		// time between frames of ship animation
